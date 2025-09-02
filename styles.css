@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 18% 1fr;
+    grid-template-areas: 
+    "sidebar main"
+}
+
+aside{
+    grid-area: sidebar;
+    background-color: rgb(6, 69, 9);
+    padding-left: 30px;
+    padding-top: 20px;
+}
+main{
+    grid-area: main;
+    padding-left: 20px;
+}
+
+p {
+    padding-top: 20px;
+}
+
+.modal {
+    text-align: center;
+    background-color: #363636;
+    display: none; 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50%;
+    width: 25%;
+    min-height: 300px;
+    min-width: 300px;
+    border-radius: 15px;
+    color: white;
+}
+
+input{
+    border-radius: 9px;
+    height: 20px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    padding-right: 9px;
+}
+
+.close:hover{
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button{
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 120px;
+}
+
+#addTask:hover {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}

@@ -4,9 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
+    <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <aside>
+        <h2 id="addTask">Add Task&plus;</h2>
+        <p>Priorities</p>
+        <p>Today</p>
+        <p>Projects</p>
+    </aside>
+    <main>
+        <h1>TODOS</h1>
+    </main>
+    <div id="myModal" class="modal">
+        <div class="modalContent">
+            <span class="close">&times;</span>
+            <form action="" id="taskForm">
+                <br><br>
+                <label for="title">Title:</label><br>
+                <input type="text" id="title" name="title" required><br>
+                <label for="description">Description:</label><br>
+                <input type="text" id="description" name="description" required><br>
+                <label for="myDate">Due Date:</label><br>
+                <input type="date" id="myDate" name="myDate" required><br><br>
+                <label id="projects" >Select Project  </label>
+                <br>
+                <button type="submit" id="pushTask">Add Task</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
